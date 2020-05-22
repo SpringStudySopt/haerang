@@ -1,6 +1,13 @@
 
+## 목차
 
-## MVC(Model View Controller)
+
+[1. Spring MVC](#MVC)
+
+[2. 프로젝트 및 폴더 구조](#스프링-프로젝트-및-폴더-구조)
+
+
+## MVC
 - 비즈니스 규칙을 표현하는 도메인 모델(Model)과 프레젠테이션을 표현하는 View를 분리하기 위해 양측 사이에 컨트롤러를 배치하도록 설계한 디자인 패턴
 - spring web MVC 모듈의 전체적인 구조는 이 패턴을 중심으로 만들어졌다.
 
@@ -58,9 +65,36 @@ public class MyWebApplicationInitializer implements WebApplicationInitializer {
 ![생명주기](https://i.imgur.com/G8y0Pqa.jpg)
 
 
+## 스프링 프로젝트 및 폴더 구조
+
+- src/main/java
+![src/main/java](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcuRWqV%2FbtqCy5chosD%2FhRK9DAUKKyKo3SFi3Wz7P0%2Fimg.png)
+    - 자바(.java) 파일이 모여있는 곳입니다. 
+    - 패키지로 잘 분리해서 자바 클래스를 생성해 사용하면 됩니다. 
+    - 스프링에서 이미 MVC 패턴의 서블릿 구조를 잡아주기 때문에 따로 서블릿을 만들 필요 없이 스프링 구조에 맞춰 클래스 파일들을 작성해주면 됩니다. 
+    
+- src/main/resources
+![src/main/resources](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdjsyqQ%2FbtqCxPVhMIf%2FXyRXIpgXAKgW8WifkDu3U0%2Fimg.png)
+   
+- src/test
+![src/test](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcAfubF%2FbtqCvyzKXYt%2FTW7G3mG1ESpSrcb0UPsyEk%2Fimg.png)
+    - 위 두 폴더와 같은 역할이지만 테스트를 위한 자바 코드와 리소스를 보관하는 곳
+    
+- Maven Dependencies
+![Maven Dependencies](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FJHcVF%2FbtqCrPP3xFi%2F058GLMTI7vvAKbFhExIab1%2Fimg.png)
+    - 메이븐에서 자동으로 관리해주는 라이브러리 폴더
+    - "pom.xml"에 작성된 라이브러리들을 자동으로 다운 받아 관리해줍니다. 
+    - 빌드툴을 사용함으로써 개발자가 직접 관리해주지 않아도 되는 영역
+    
+- 기타 구조 참고
+[스프링(Spring) 프로젝트의 폴더 구조](https://codevang.tistory.com/240)
+
 ---
 
 ### 출처
 [springMvc구조](https://minwan1.github.io/2018/05/28/2018-05-28-spring-mvc/)
+[프로젝트및폴더구조](https://codevang.tistory.com/240)
+    - 자바 클래스에서 사용하는 리소스를 보관하는 곳입니다. 
+    - DB 연결을 위한 자원, 의존성 주입(DI)을 위한 xml 파일 등 자바 코드 외 모든 자원은 이곳에 넣어주면 됩니다.
 
 
