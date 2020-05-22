@@ -81,6 +81,7 @@ public class MyWebApplicationInitializer implements WebApplicationInitializer {
    
 - src/test
     - 위 두 폴더와 같은 역할이지만 테스트를 위한 자바 코드와 리소스를 보관하는 곳
+    
 ![src/test](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcAfubF%2FbtqCvyzKXYt%2FTW7G3mG1ESpSrcb0UPsyEk%2Fimg.png)
     
     
@@ -92,7 +93,7 @@ public class MyWebApplicationInitializer implements WebApplicationInitializer {
 ![Maven Dependencies](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FJHcVF%2FbtqCrPP3xFi%2F058GLMTI7vvAKbFhExIab1%2Fimg.png)
     
     
-- 기타 구조 참고
+### 기타 구조 참고
 
 [스프링(Spring) 프로젝트의 폴더 구조](https://codevang.tistory.com/240)
 
