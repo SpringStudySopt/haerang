@@ -68,27 +68,29 @@ public class MyWebApplicationInitializer implements WebApplicationInitializer {
 ## 스프링 프로젝트 및 폴더 구조
 
 - src/main/java
-
-![src/main/java](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcuRWqV%2FbtqCy5chosD%2FhRK9DAUKKyKo3SFi3Wz7P0%2Fimg.png)
     - 자바(.java) 파일이 모여있는 곳입니다. 
     - 패키지로 잘 분리해서 자바 클래스를 생성해 사용하면 됩니다. 
-    - 스프링에서 이미 MVC 패턴의 서블릿 구조를 잡아주기 때문에 따로 서블릿을 만들 필요 없이 스프링 구조에 맞춰 클래스 파일들을 작성해주면 됩니다. 
+    - 스프링에서 이미 MVC 패턴의 서블릿 구조를 잡아주기 때문에 따로 서블릿을 만들 필요 없이 스프링 구조에 맞춰 클래스 파일들을 작성해주면 됩니다.
+
+![src/main/java](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcuRWqV%2FbtqCy5chosD%2FhRK9DAUKKyKo3SFi3Wz7P0%2Fimg.png)
+     
     
 - src/main/resources
 
 ![src/main/resources](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdjsyqQ%2FbtqCxPVhMIf%2FXyRXIpgXAKgW8WifkDu3U0%2Fimg.png)
    
 - src/test
-
-![src/test](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcAfubF%2FbtqCvyzKXYt%2FTW7G3mG1ESpSrcb0UPsyEk%2Fimg.png)
     - 위 두 폴더와 같은 역할이지만 테스트를 위한 자바 코드와 리소스를 보관하는 곳
+![src/test](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcAfubF%2FbtqCvyzKXYt%2FTW7G3mG1ESpSrcb0UPsyEk%2Fimg.png)
+    
     
 - Maven Dependencies
-
-![Maven Dependencies](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FJHcVF%2FbtqCrPP3xFi%2F058GLMTI7vvAKbFhExIab1%2Fimg.png)
     - 메이븐에서 자동으로 관리해주는 라이브러리 폴더
     - "pom.xml"에 작성된 라이브러리들을 자동으로 다운 받아 관리해줍니다. 
     - 빌드툴을 사용함으로써 개발자가 직접 관리해주지 않아도 되는 영역
+    
+![Maven Dependencies](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FJHcVF%2FbtqCrPP3xFi%2F058GLMTI7vvAKbFhExIab1%2Fimg.png)
+    
     
 - 기타 구조 참고
 
